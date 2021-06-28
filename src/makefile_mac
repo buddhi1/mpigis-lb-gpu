@@ -1,10 +1,12 @@
 CC = mpicxx
-LIBB = -L/usr/local/Cellar/geos/3.5.0/lib -lgeos
+#LIBB = -L/usr/local/Cellar/geos/3.5.0/lib -lgeos
+LIBB = -L/opt/homebrew/Cellar/geos/3.9.1/lib -lgeos-3.9.1
 #LIBB = -L/sw/geosoft/geos/lib -lgeos
 #CFLAGS = -Wall -c -std=c++0x -I/sw/geosoft/geos/include
 LIBRA = ../lib/libshp.a
 DEBUG = -g
-CFLAGS = -g -Wall -c -std=c++0x -I/usr/local/Cellar/geos/3.5.0/include
+#CFLAGS = -g -Wall -c -std=c++0x -I/usr/local/Cellar/geos/3.5.0/include
+CFLAGS = -g -Wall -c -std=c++0x -I/opt/homebrew/Cellar/geos/3.9.1/include
 LFLAGS = -Wall
 
 all: mpiio
