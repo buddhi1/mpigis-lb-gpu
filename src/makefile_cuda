@@ -2,10 +2,12 @@ GCC = g++
 CC = mpicxx
 #LIBB = -L/usr/local/Cellar/geos/3.5.0/lib 
 #LIBB = -L/sw/geosoft/geos/lib -lgeos
-LIBB = -L/usr/local/lib -lgeos
+#LIBB = -L/usr/local/lib -lgeos
+LIBB = -L/usr/lib64 -lgeos
 
 #CFLAGS = -m64 -O2 -Wall -c -std=c++0x -I/sw/geosoft/geos/include
-CFLAGS = -m64 -O2 -Wall -c -std=c++0x -I/usr/local/include
+#CFLAGS = -m64 -O2 -Wall -c -std=c++0x -I/usr/local/include
+CFLAGS = -m64 -O2 -Wall -c -std=c++0x -I/usr/include
 
 #LIBRA = ../lib/libshp.a ../lib/libtree.a
 LIBRA =
