@@ -3,9 +3,11 @@ CC = mpicxx
 #CC = mpecc --mpicc='mpicxx' -mpilog
 #LIBB = -L/usr/local/Cellar/geos/3.5.0/lib 
 #LIBB = -L/sw/geosoft/geos/lib -lgeos
-LIBB = -L/usr/local/lib -lgeos
+# LIBB = -L/usr/local/lib -lgeos
+LIBB = -L/apps/geos/3.7.2/lib -lgeos-3.7.2
 #CFLAGS = -O2 -Wall -c -std=c++0x -I/sw/geosoft/geos/include
-CFLAGS = -O0 -Wall -c -std=c++0x -I/usr/local/include
+# CFLAGS = -O0 -Wall -c -std=c++0x -I/usr/local/include
+CFLAGS = -O0 -Wall -c -std=c++0x -I/apps/geos/3.7.2/include
 #LIBRA = ../lib/libshp.a ../lib/librtree.a
 LIBRA =
 DEBUG =
